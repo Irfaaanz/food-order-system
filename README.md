@@ -1,4 +1,4 @@
-# new Project
+# Brasas Brazuca Food Ordering Project
 
 CSC301 Group Assignment UITM
 
