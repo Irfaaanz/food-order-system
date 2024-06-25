@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C47968BD-6E27-4C61-A09E-2EF71E748746}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>new_Project.My.MyApplication</StartupObject>
+    <RootNamespace>new_Project</RootNamespace>
+    <AssemblyName>new Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>new Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>new Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>new Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>new Project.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>new Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>new Project.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrasasBrazuciaStaffDataDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BrasasBrazuciaStaffDataDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="homePage.Designer.vb">
+      <DependentUpon>homePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="homePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuDisplay.Designer.vb">
+      <DependentUpon>menuDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menuDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="orderForm.Designer.vb">
+      <DependentUpon>orderForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="orderForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderReportSummary.Designer.vb">
+      <DependentUpon>orderReportSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="orderReportSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffInterface.Designer.vb">
+      <DependentUpon>staffInterface.vb</DependentUpon>
+    </Compile>
+    <Compile Include="staffInterface.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffLogin.Designer.vb">
+      <DependentUpon>staffLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="staffLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="homePage.resx">
+      <DependentUpon>homePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuDisplay.resx">
+      <DependentUpon>menuDisplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderForm.resx">
+      <DependentUpon>orderForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderReportSummary.resx">
+      <DependentUpon>orderReportSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffInterface.resx">
+      <DependentUpon>staffInterface.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffLogin.resx">
+      <DependentUpon>staffLogin.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BrasasBrazuciaStaffDataDataSet.xsc">
+      <DependentUpon>BrasasBrazuciaStaffDataDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="BrasasBrazuciaStaffDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BrasasBrazuciaStaffDataDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="BrasasBrazuciaStaffDataDataSet.xss">
+      <DependentUpon>BrasasBrazuciaStaffDataDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\moqueca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\feijoada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Chicken Tortilla Wrap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\brigadeiro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Ribeye Steak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Samba Rump Steak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Mojitto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Coconut Water.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Lemonade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sky Juice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Americano1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Creamy Mango.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Matcha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Jerky Beef with Fries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Norway Salmon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Traditional Caesa Salad.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Penne Arabiata.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Cappuchino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Brazilian Cheese Bread.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BrasasBrazuciaStaffData.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
